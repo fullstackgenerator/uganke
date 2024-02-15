@@ -1,0 +1,764 @@
+
+body {
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #f1f1f1 transparent;
+}
+
+/* Webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Firefox */
+body {
+  scrollbar-color: #f1f1f1 #f1f1f1;
+}
+
+body::-moz-scrollbar-thumb {
+  background: #888;
+}
+
+body::-moz-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.ozadjeUganka {
+  height: 100vh;
+  width: 100vw;
+}
+
+.naslovUganka,
+.besediloUganka,
+.answerInput,
+.preveri,
+.novaUganka,
+.hint-text,
+.result-container {
+  position: absolute;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+.naslovUganka {
+  position: absolute;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  color: rgb(0, 183, 255);
+}
+
+.answerInput {
+  text-align: center;
+  width: 50%;
+  border-width: 1px;
+}
+
+.result-container,
+.hint-text {
+  opacity: 1;
+  transition: opacity 1s ease;
+  text-align: center;
+}
+
+.result-container {
+  color: #01a106;
+}
+
+.hint-text {
+  color: #cf4127;
+}
+
+button {
+  border-radius: 5px;
+}
+
+@media(max-width: 319px) and (orientation: portrait) {
+
+  .naslovUganka,
+  .besediloUganka,
+  .preveri,
+  .novaUganka,
+  .answerInput,
+  .hintContainer,
+  .hint-text,
+  .result-container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .naslovUganka,
+  .besediloUganka,
+  .hint-text,
+  .result-container {
+    text-align: center;
+    width: 90%;
+  }
+
+  .naslovUganka {
+    font-size: 25px;
+    top: 25%;
+  }
+
+  .besediloUganka {
+    font-size: 19px;
+    top: 40%;
+  }
+
+  .answerInput {
+    top: 55%;
+  }
+
+  .result-container {
+    font-size: 18px;
+    top: 65%;
+  }
+
+  .hint-text {
+    font-size: 18px;
+    top: 70%;
+  }
+
+  .preveri,
+  .novaUganka {
+    top: 80%;
+    width: 95px;
+    height: 30px;
+    line-height: 15px;
+    font-size: 16px;
+  }
+
+  .preveri {
+    left: 34%;
+  }
+
+  .novaUganka {
+    left: 66%;
+  }
+}
+
+@media(max-width: 568px) and (orientation: landscape) {
+  .naslovUganka,
+  .besediloUganka,
+  .preveri,
+  .novaUganka,
+  .answerInput,
+  .hintContainer,
+  .hint-text,
+  .result-container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .naslovUganka,
+  .besediloUganka,
+  .hint-text,
+  .result-container {
+    text-align: center;
+    width: 90%;
+  }
+  
+  .naslovUganka {
+    font-size: 22px;
+    top: 15%;
+  }
+  
+  .besediloUganka {
+    font-size: 18px;
+    top: 35%;
+  }
+  
+  .result-container {
+    font-size: 17px;
+    top: 55%;
+  }
+  
+  .hint-text {
+    font-size: 17px;
+    top: 62%;
+  }
+
+  .answerInput {
+    top: 75%;
+    width: 30%;
+  }
+  
+  .preveri,
+  .novaUganka {
+    top: 90%;
+    width: 95px;
+    height: 30px;
+    line-height: 15px;
+    font-size: 16px;
+  }
+  
+  .preveri {
+    left: 40%;
+  }
+  
+  .novaUganka {
+    left: 60%;
+  }
+}
+
+@media(min-width: 320px) and (orientation: portrait) {
+
+  .naslovUganka,
+  .besediloUganka,
+  .preveri,
+  .novaUganka,
+  .answerInput,
+  .hintContainer,
+  .hint-text,
+  .result-container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .naslovUganka,
+  .besediloUganka,
+  .hint-text,
+  .result-container {
+    text-align: center;
+    width: 90%;
+  }
+  
+  .naslovUganka {
+    font-size: 25px;
+    top: 25%;
+  }
+  
+  .besediloUganka {
+    font-size: 18px;
+    top: 40%;
+  }
+  
+  .result-container {
+    font-size: 17px;
+    top: 55%;
+  }
+  
+  .hint-text {
+    font-size: 17px;
+    top: 60%;
+  }
+
+  .answerInput {
+    top: 70%;
+  }
+  
+  .preveri,
+  .novaUganka {
+    top: 80%;
+    width: 95px;
+    height: 30px;
+    line-height: 15px;
+    font-size: 16px;
+  }
+  
+  .preveri {
+    left: 34%;
+  }
+  
+  .novaUganka {
+    left: 66%;
+  }
+}
+
+@media(min-width: 568px) and (orientation: landscape) {
+  .naslovUganka,
+  .besediloUganka,
+  .preveri,
+  .novaUganka,
+  .answerInput,
+  .hintContainer,
+  .hint-text,
+  .result-container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .naslovUganka,
+  .besediloUganka,
+  .hint-text,
+  .result-container {
+    text-align: center;
+    width: 90%;
+  }
+  
+  .naslovUganka {
+    font-size: 22px;
+    top: 15%;
+  }
+  
+  .besediloUganka {
+    font-size: 18px;
+    top: 35%;
+  }
+  
+  .result-container {
+    font-size: 17px;
+    top: 55%;
+  }
+  
+  .hint-text {
+    font-size: 17px;
+    top: 62%;
+  }
+
+  .answerInput {
+    top: 75%;
+    width: 30%;
+  }
+  
+  .preveri,
+  .novaUganka {
+    top: 90%;
+    width: 95px;
+    height: 30px;
+    line-height: 15px;
+    font-size: 16px;
+  }
+  
+  .preveri {
+    left: 40%;
+  }
+  
+  .novaUganka {
+    left: 60%;
+  }
+}
+
+@media(min-width: 640px) and (orientation: landscape) {
+  
+  .preveri {
+    left: 42%;
+  }
+  
+  .novaUganka {
+    left: 58%;
+  }
+}
+
+@media(min-width: 360px) and (orientation: portrait) {
+
+  .preveri {
+    left: 35%;
+  }
+  
+  .novaUganka {
+    left: 65%;
+  }
+}
+
+@media(min-width: 375px) and (orientation: portrait) {
+
+  .preveri,
+  .novaUganka {
+    line-height: 5px;
+  }
+}
+
+@media(min-width: 390px) and (orientation: portrait) {
+
+  .naslovUganka {
+    font-size: 26px;
+  }
+
+  .besediloUganka {
+    font-size: 19px;
+  }
+  
+  .answerInput,
+  .result-container,
+  .hint-text,
+  .preveri,
+  .novaUganka {
+    font-size: 18px;
+  }
+  
+  .result-container {
+    top: 56%;
+  }
+  
+  .hint-text {
+    top: 63%;
+  }
+
+  .preveri,
+  .novaUganka {
+    line-height: 10px;
+  }
+  
+  .preveri {
+    left: 37%;
+  }
+  
+  .novaUganka {
+    left: 63%;
+  }
+}
+
+@media(min-width: 412px) and (orientation: portrait) {
+
+  .besediloUganka {
+    font-size: 20px;
+  }
+  
+  .answerInput,
+  .result-container,
+  .hint-text,
+  .preveri,
+  .novaUganka {
+    font-size: 19px;
+  }
+  
+  .result-container {
+    top: 58%;
+  }
+
+  .hint-text {
+    top: 63%;
+  }
+
+  .preveri,
+  .novaUganka {
+    height: 35px;
+    line-height: 15px;
+    top: 78%;
+  }
+}
+
+@media(min-width: 736px) and (orientation: landscape) {
+
+  .preveri,
+  .novaUganka {
+    height: 35px;
+    line-height: 15px;
+  }
+
+  .preveri {
+    left: 43%;
+  }
+  
+  .novaUganka {
+    left: 57%;
+  }
+}
+
+@media(min-width: 430px) and (orientation: portrait) {
+
+  .naslovUganka {
+    font-size: 27px;
+  }
+
+  .besediloUganka {
+    font-size: 21px;
+    top: 45%;
+  }
+
+  .preveri,
+  .novaUganka {
+    width: 105px;
+    line-height: 15px;
+  }
+  
+  .answerInput,
+  .result-container,
+  .hint-text,
+  .preveri,
+  .novaUganka {
+    font-size: 20px;
+  }
+}
+
+@media(min-width: 900px) and (orientation: landscape) {
+
+  .naslovUganka {
+    font-size: 25px;
+  }
+
+  .preveri {
+    left: 44%;
+  }
+  
+  .novaUganka {
+    left: 56%;
+  }
+}
+
+@media(min-width: 768px) and (orientation: portrait) {
+  
+  .naslovUganka {
+    font-size: 25px;
+    top: 30%;
+  }
+  
+  .besediloUganka {
+    font-size: 18px;
+    top: 40%;
+    width: 70%;
+  }
+  
+  .result-container {
+    font-size: 17px;
+    top: 50%;
+  }
+  
+  .hint-text {
+    font-size: 17px;
+    top: 55%;
+  }
+
+  .answerInput {
+    font-size: 17px;
+    top: 63%;
+    width: 30%;
+  }
+  
+  .preveri,
+  .novaUganka {
+    top: 70%;
+    width: 95px;
+    height: 30px;
+    line-height: 15px;
+    font-size: 17px;
+  }
+  
+  .preveri {
+    left: 43%;
+  }
+  
+  .novaUganka {
+    left: 57%;
+  }
+}
+
+@media(min-width: 1024px) and (orientation: landscape) {
+  
+  .naslovUganka {
+    font-size: 25px;
+    top: 25%;
+  }
+  
+  .besediloUganka {
+    font-size: 18px;
+    top: 35%;
+    width: 100%;
+  }
+  
+  .result-container {
+    font-size: 17px;
+    top: 45%;
+  }
+  
+  .hint-text {
+    font-size: 17px;
+    top: 50%;
+  }
+
+  .answerInput {
+    top: 58%;
+    width: 20%;
+  }
+  
+  .preveri,
+  .novaUganka {
+    top: 65%;
+    width: 95px;
+    height: 35px;
+    line-height: 15px;
+    font-size: 16px;
+  }
+  
+  .preveri {
+    left: 45%;
+  }
+  
+  .novaUganka {
+    left: 55%;
+  }
+}
+
+@media(min-width: 820px) and (orientation: portrait) {
+  
+  .naslovUganka {
+    font-size: 26px;
+    top: 30%;
+  }
+  
+  .besediloUganka {
+    font-size: 20px;
+  }
+  
+  .result-container {
+    font-size: 19px;
+    top: 50%;
+  }
+  
+  .hint-text {
+    font-size: 19px;
+    top: 53%;
+  }
+
+  .answerInput {
+    font-size: 19px;
+    top: 60%;
+    width: 40%;
+  }
+  
+  .preveri,
+  .novaUganka {
+    top: 65%;
+    height: 38px;
+    font-size: 19px;
+  }
+}
+
+@media(min-width: 1180px) and (orientation: landscape) {
+  
+  .naslovUganka {
+    font-size: 25px;
+    top: 25%;
+  }
+  
+  .besediloUganka {
+    font-size: 18px;
+    top: 35%;
+    width: 100%;
+  }
+  
+  .result-container {
+    font-size: 17px;
+    top: 45%;
+  }
+  
+  .hint-text {
+    font-size: 17px;
+    top: 50%;
+  }
+
+  .answerInput {
+    top: 58%;
+    width: 20%;
+  }
+  
+  .preveri,
+  .novaUganka {
+    top: 65%;
+    width: 95px;
+    height: 35px;
+    line-height: 15px;
+    font-size: 16px;
+  }
+  
+  .preveri {
+    left: 45%;
+  }
+  
+  .novaUganka {
+    left: 55%;
+  }
+}
+
+@media(min-width: 1024px) and (orientation: portrait) {
+  
+  .naslovUganka {
+    font-size: 26px;
+    top: 30%;
+  }
+  
+  .besediloUganka {
+    font-size: 20px;
+  }
+  
+  .result-container {
+    font-size: 19px;
+    top: 50%;
+  }
+  
+  .hint-text {
+    font-size: 19px;
+    top: 53%;
+  }
+
+  .answerInput {
+    font-size: 19px;
+    top: 60%;
+    width: 40%;
+  }
+  
+  .preveri,
+  .novaUganka {
+    top: 65%;
+  }
+
+  .preveri {
+    left: 44%;
+  }
+  
+  .novaUganka {
+    left: 56%;
+  }
+}
+
+@media(min-width: 1600px) and (orientation: landscape) { 
+
+  .naslovUganka {
+    font-size: 25px;
+    top: 25%;
+  }
+  
+  .besediloUganka {
+    font-size: 18px;
+    top: 35%;
+    width: 100%;
+  }
+  
+  .result-container {
+    font-size: 17px;
+    top: 45%;
+  }
+  
+  .hint-text {
+    font-size: 17px;
+    top: 50%;
+  }
+
+  .answerInput {
+    top: 58%;
+    width: 20%;
+  }
+  
+  .preveri,
+  .novaUganka {
+    top: 65%;
+    width: 95px;
+    height: 35px;
+    line-height: 15px;
+    font-size: 16px;
+  }
+  
+  .preveri {
+    left: 46%;
+  }
+  
+  .novaUganka {
+    left: 54%;
+  }
+}
