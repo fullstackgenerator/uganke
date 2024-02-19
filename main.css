@@ -35,6 +35,20 @@ body::-moz-scrollbar-thumb:hover {
   background: #555;
 }
 
+
+.druga {
+  opacity: 0;
+  transform: translateX(-1px);
+  transition: all 0.7s ease-out;
+  transition-delay: 0.4s;
+}
+
+.scroll-animation {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
 .ozadjeUganka {
   height: 100vh;
   width: 100vw;
