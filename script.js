@@ -11,6 +11,9 @@ const riddles = [
     { text: "Kadar je lepo vreme, v kotu čepi, kadar pa ni, pa okrog leti.", answer: "dežnik", hint: "Vedno pride prav." },
     { text: "Enkrat, dvakrat se obrne, ko gre od doma in ko se vrne.", answer: "ključ", hint: "Groza je, če po svoje gre." },
     { text: "Leti in skače pa ni ne človek, ne žival.", answer: "žoga", hint: "Vsakdo se za njo podi." },
+    { text: "Imam mesta brez hiš, gozdove brez dreves in reke brez vode. Kaj sem?", answer: "zemljevid", hint: "V žepu je dovolj prostora zame." },
+    { text: "Letim brez kril in jočem brez oči.", answer: "oblak", hint: "O meni pogosto govorijo na TV." },
+    { text: "Imam vrat, a nimam glave.", answer: "steklenica", hint: "Vedno sem v veseli družbi." },
     // dodaj uganke po potrebi
   ];
   
