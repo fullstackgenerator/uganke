@@ -14,6 +14,41 @@ const riddles = [
     { text: "Imam mesta brez hiš, gozdove brez dreves in reke brez vode. Kaj sem?", answer: "zemljevid", hint: "V žepu je dovolj prostora zame." },
     { text: "Letim brez kril in jočem brez oči.", answer: "oblak", hint: "O meni pogosto govorijo na TV." },
     { text: "Imam vrat, a nimam glave.", answer: "steklenica", hint: "Vedno sem v veseli družbi." },
+    { text: "Kaj ni naprodaj za noben denar na svetu?", answer: "izgubljeni čas", hint: "Nekaj kar je za vedno zapravljeno." },
+
+ { text: "Nosi svojega gospoda, gospod pa njega.", answer: "čevelj", hint: "Včasih žuli." },
+
+ { text: "Bolj se vidi ponoči kot podnevi.", answer: "luč", hint: "Z menoj je iskanje stvari lažje. " },
+
+ { text: "V hiši je pet bratov in vsak ima po eno sestro. Koliko jih je?", answer: "šest", hint: "Manj kot deset." },
+
+ { text: "Imam oči, pa vendar sem slep. Pri vsakem očesu mi zraste rep.", answer: "krompir", hint: "Lahko je kuhan, pečen ali pražen." },
+
+ { text: "Kaj moraš držati, čeprav si drugemu dal?", answer: "besedo", hint: "Ne smeš je prelomiti." },
+
+ { text: "Ni kradel, nič ni naredil pa je obešen bil.", answer: "zvon", hint: "Že od daleč se sliši njegov glas." },
+
+ { text: "Kamor pride, povsod je doma.", answer: "polž", hint: "Počasi stopiclja." },
+
+ { text: "En teden je sit, dva je zvit, potem se gre skrit.", answer: "mesec", hint: "V družbi zvezd ga najdemo." },
+
+ { text: "Hodi skozi vodo, a se ne zmoči.", answer: "sončni žarek", hint: "Zlatorumeno se blešči." },
+
+ { text: "Govori vse jezike, pa se jih ni učil.", answer: "odmev", hint: "Posluša te in odgovori." },
+
+ { text: "Orje kakor orač, črn je kakor kovač, pa ni ne orač, niti kovač.", answer: "krt", hint: "V zemlji živi." },
+
+ { text: "Črno, zlato, rjavo, rdeče, v sneženo barvo se preobleče.", answer: "lasje", hint: "Z leti pobledijo in se spremenijo." },
+
+ { text: "Vedno pod streho, a vedno moker.", answer: "jezik", hint: "Vsak z njim opleta." },
+
+ { text: "Spodaj je ozek, zgoraj širok, skozi pa teče majhen potok.", answer: "lijak", hint: "V vinski kleti pride prav." },
+
+ { text: "Če nimaš, si ga želiš, če ga imaš, ga redko obdržiš.", answer: "denar", hint: "…sveta vladar." },
+
+ { text: "Pozimi cveti, poleti hladi, na soncu se joka, v senci strdi.", answer: "led", hint: "Včasih te na zadnjo plat spodnese." },
+
+ { text: "Previdnost je mati modrosti, kdo pa je hči?", answer: "modrost", hint: "Prihaja z leti." },
     // dodaj uganke po potrebi
   ];
   
